@@ -1,0 +1,10 @@
+<div class="container">
+	<p><%= @ct %></p>
+	<div class="row">
+		<% for m in @media %>
+			<div class="col-xs-4">
+				<img src="<%= m.images.standard_resolution.url %>" class="img-responsive">
+			</div>
+		<% end %>
+	</div>
+</div>

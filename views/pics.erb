@@ -1,0 +1,25 @@
+<section id='people'>
+    <div class="container">
+
+        <h1 class="page-header">#meetthesudols</h1>
+
+        <% if @media.length == 0 %>
+            <div class="alert alert-info" role="alert">
+              <strong>Heads up!</strong> Our pictures are down right now :( Please check back soon!
+            </div>
+        <% end %>
+
+        <div class="row ig-pic-holder">
+            <% for m in @media %>
+            <div class="col-xs-6 col-sm-4 ig-pic">
+                <a href="<%= m.link %>" target="_blank">
+                    <div class="img-holder ratio-1-1">
+                        <img src="<%= m.images.standard_resolution.url %>" class="img-responsive img-rounded">
+                    </div>
+                </a>
+            </div>
+            <% end %>
+        </div>
+
+    </div>
+</section>

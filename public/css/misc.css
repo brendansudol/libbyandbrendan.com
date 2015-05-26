@@ -1,0 +1,412 @@
+/* big, global stuff
+-------------------------------------------------- */
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.clear {
+  clear: both;
+}
+
+.btn {
+  border-radius: 1px;
+}
+
+.page-header {
+  margin: 20px 0 50px;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+#rsvp .page-header {
+  margin-bottom: 30px;
+}
+
+hr {
+  border-top: 3px solid #e6e6e6;
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.lead {
+  font-weight: 300;
+  color: #555;
+}
+
+section {
+  font-size: 16px;
+}
+
+ul {
+  list-style: square;
+}
+
+.form-control {
+  border: 2px solid #ddd;
+  border-radius: 1px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.thumb-sign {
+  font-size: 12px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+  background-color: #fafafa;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container .text-muted {
+  margin: 10px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Navbar
+-------------------------------------------------- */
+
+.navbar {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.pics {
+  padding: 8px;
+  border: 1px dashed #999;
+}
+
+.pics:hover {
+  border: 1px solid #999;
+}
+
+
+/* Homepage
+-------------------------------------------------- */
+
+section#home {
+  padding: 25px 0;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero .names {
+  margin-bottom: 30px;
+}
+
+.hero .intro {
+  margin-bottom: 35px;
+}
+
+.hero-title {
+  color: #555;
+}
+
+.hero-subtitle {
+  color: #777;
+  font-size: 22px;
+}
+
+.hero .names img {
+  max-width: 80%;
+}
+
+.lb-pics img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.us-pic-holder {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: 4px;
+}
+
+.fallback {
+  margin-top: 30px;
+}
+
+.rsvp-headline {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.btn-rsvp {
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.btn-rsvp:hover {
+  background-color: #2c3e50;
+}
+
+
+/* RSVP
+-------------------------------------------------- */
+
+.btn-submit {
+  text-transform: uppercase;
+}
+
+/* About Us
+-------------------------------------------------- */
+
+#about-us .col-sm-4 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.big-number {
+  font-size: 60px;
+  text-align: center;
+}
+
+/* Details
+-------------------------------------------------- */
+
+section#details {
+  padding-top: 40px;
+}
+
+.featurette-divider {
+  margin: 60px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  margin-top: 0px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.featurette-image {
+  margin: 0 auto;
+}
+
+.directions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.directions .lead {
+  margin-bottom: 10px;
+}
+
+.directions a {
+  font-weight: 700;
+}
+
+.directions img {
+  margin-top: 20px;
+}
+
+
+/* Registry
+-------------------------------------------------- */
+
+.img-registry {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.img-registry:hover {
+  background-color: #e6e6e6;
+}
+
+@media (min-width: 768px) {
+  .img-registry {
+    padding: 30px;
+  }
+}
+
+/* Lodging
+-------------------------------------------------- */
+
+#lodging .page-header {
+  margin-bottom: 20px;
+}
+
+.hotel-options {
+  margin-bottom: 20px;
+}
+
+.hotel-options p span {
+  position: relative;
+  bottom: 6px;
+  left: 4px;
+  font-size: 14px;
+}
+
+.hotel-options .btn {
+  margin-bottom: 15px;
+}
+
+.hotel-title {
+  margin-top: 5px;
+}
+
+.fun-options ul {
+  margin-bottom: 25px;
+}
+
+/* People
+-------------------------------------------------- */
+
+.moh {
+  font-size: 14px;
+}
+
+.peeps h2 {
+  margin-bottom: 40px;
+}
+
+#people .peeps {
+  text-align: center;
+}
+
+#people .peeps p {
+  text-align: left;
+}
+
+#people .img-circle {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+/* Pics
+-------------------------------------------------- */
+
+.row.ig-pic-holder {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.ig-pic {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.ig-pic .img-holder {
+  position: relative;    
+  height: 0;
+  overflow: hidden;
+  background-color: #fafafa;  
+}
+
+.ratio-1-1 {
+  padding-bottom:100%;
+}
+
+.ig-pic .img-holder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .navbar-nav li a span.active {
+    color: #666;
+    border-bottom: 2px solid #b3b3b3;
+    padding-bottom: 4px;
+  }
+
+  section#home {
+    padding-top: 30px;
+  }
+
+  .hero .names img {
+    max-width: 60%;
+  }
+
+  #about-us .col-sm-4 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .hero-title { 
+    font-size: 24px; 
+  }
+
+  .hero-subtitle { 
+    font-size: 18px; 
+  }
+
+  .rsvp-headline {
+    font-size: 18px;
+  }
+
+  .navbar-nav li:hover {
+    background: #ededed;
+  }
+
+  .img-linden {
+    margin-top: 25px;
+  }
+
+  .img-vmfa {
+    margin-bottom: 25px;
+  }
+
+}
+

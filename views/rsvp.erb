@@ -1,0 +1,75 @@
+<section id='rsvp'>
+  <div class="container">
+
+    <h1 class="page-header">RSVP</h1>
+
+    <p class="lead">
+      We look forward to celebrating with you! Please respond by September 1.
+    </p>
+
+    <form role="form" action="/rsvp" method="post">
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name(s)</label>
+        <input type="text" class="form-control" name="names" placeholder="Enter name(s)" required>
+      </div>
+
+      <div class="form-group">
+        <div class="radio">
+          <label>
+            <input type="radio" name="attending" value="yes" checked>
+            will attend
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="attending" value="no">
+            will not attend
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Total number attending</label>
+            <input type="number" class="form-control" name="num_attending" placeholder="Enter number">
+          </div>
+        </div>
+
+        <div class="col-sm-8">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Will dance if you play...</label>
+            <input type="text" class="form-control" name="song" placeholder="Enter groovy song (optional)">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="exampleInputEmail1">Note to bride and groom</label>
+        <textarea class="form-control" rows="2" name="note" placeholder="Optional"></textarea>
+      </div> -->
+
+      <button type="submit" class="btn btn-submit btn-info" data-loading-text="Submitting...">Submit</button>
+
+    </form>
+
+  </div>
+</section>
+
+
+<script>
+
+  $(function() {
+    $('form').submit(function () {
+      $('.btn-submit').button('loading');
+    });
+  });
+
+</script>
+
+
+
+

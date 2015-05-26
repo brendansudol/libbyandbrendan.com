@@ -1,0 +1,26 @@
+useful resoure: http://adamwhitcroft.com/climacons/font/
+http://www.wunderground.com/weather/api/d/docs?d=data/forecast
+https://github.com/wnadeau/wunderground_ruby
+
+w_api = Wunderground.new("107018841928620f")
+weather = w_api.forecast_for("NY","Brooklyn")
+weather['forecast']['simpleforecast']['forecastday'][0]['icon']
+a = w_api.conditions_for("11217")
+a['current_observation']['icon']
+a['current_observation']['temp_f']
+
+<script type="text/javascript">
+
+// jQuery(document).ready(function($) { 
+//   $.ajax({ 
+//     url : "http://api.wunderground.com/api/107018841928620f/geolookup/conditions/q/IA/Cedar_Rapids.json", 
+//     dataType : "jsonp", 
+//     success : function(parsed_json) { 
+//       var location = parsed_json['location']['city']; 
+//       var temp_f = parsed_json['current_observation']['temp_f']; 
+//       console.log("Current temperature in " + location + " is: " + temp_f); 
+//     } 
+//   }); 
+// });
+
+</script>
